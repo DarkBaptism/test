@@ -4,15 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Post test
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<form method="POST" action="https://dev.staticman.net/v3/entry/github/DarkBaptism/test/master">
+  <input name="options[redirect]" type="hidden" value="https://my-site.com">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <label><input name="fields[name]" type="text">Name</label>
+  <label><input name="fields[email]" type="email">E-mail</label>
+  <label><textarea name="fields[message]"></textarea>Message</label>
+  
+  <button type="submit">Go!</button>
+</form>
