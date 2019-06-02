@@ -15,7 +15,8 @@
 <script type="application/ld+json">
 {"@type":"WebSite","url":"http://localhost:4000/about/","name":"Your awesome title","headline":"About","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /><meta name="theme-color" content="#1e2327">
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
@@ -40,16 +41,18 @@
   </header>
 
   <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+    <p>Post test</p>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
-
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
+<form method="POST" action="https://api.staticman.net/v3/connect/DarkBaptism/test">
+  <input name="options[redirect]" type="hidden" value="https://my-site.com" />
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="" />
+  <label><input name="fields[name]" type="text" />Name</label>
+  <label><input name="fields[email]" type="email" />E-mail</label>
+  <label><textarea name="fields[message]"></textarea>Message</label>
+  
+  <button type="submit">Go!</button>
+</form>
 
   </div>
 

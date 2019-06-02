@@ -6,7 +6,7 @@ permalink: /about/
 
 Post test
 
-<form method="POST" action="https://dev.staticman.net/v3/entry/github/DarkBaptism/test/master">
+<form method="POST" action="https://api.staticman.net/v3/connect/DarkBaptism/test">
   <input name="options[redirect]" type="hidden" value="https://my-site.com">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
