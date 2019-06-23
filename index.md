@@ -7,7 +7,7 @@ layout: home
 
 Post test
 
-<form method="POST" action="https://dev.staticman.net/v3/entry/github/DarkBaptism/test/master/comments">
+<form method="POST" action="https://api.staticman.net/v3/entry/github/DarkBaptism/test/master/comments">
   <input name="options[redirect]" type="hidden" value="https://darkbaptism.github.io/test">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
