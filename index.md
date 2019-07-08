@@ -17,3 +17,9 @@ Post test
   
   <button type="submit">Go!</button>
 </form>
+
+<section class="constrain">
+    <h3>All reviews</h3>
+
+    {% include reviews.html %}
+</section>
